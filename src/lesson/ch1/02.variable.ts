@@ -2,8 +2,8 @@
  * 变量声明 and 解构 （deconstruction）
  * @Author: Junting.liu
  * @Date: 2019-04-30 14:43:28
- * @Last Modified by: Junting.liu
- * @Last Modified time: 2019-04-30 18:05:56
+ * @Last Modified by: Junting
+ * @Last Modified time: 2020-04-04 22:56:03
  */
 
 // var
@@ -72,7 +72,7 @@ function func2({ a, b = 10 } = { a : ''}) {
 
 func2(); // 不传任何参数 10
 func2({ a: 'yes'}); // yes 10
-func2({}); // 传空对象, 要嘛什么都不传，要传 必须传带有 a 属性值，不然类型推断会提示错误
+// func2({}); // 传空对象, 要嘛什么都不传，要传 必须传带有 a 属性值，不然类型推断会提示错误
 
 
 // 变量声明 - 展开

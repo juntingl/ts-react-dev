@@ -2,8 +2,8 @@
  * 基本类型
  * @Author: Junting.liu
  * @Date: 2019-04-30 14:42:23
- * @Last Modified by:   Junting.liu
- * @Last Modified time: 2019-04-30 14:42:23
+ * @Last Modified by: Junting
+ * @Last Modified time: 2020-04-04 22:55:23
  */
 
 // 布尔值
@@ -46,8 +46,8 @@ enum Color { // 默认从下标数字 0 开始, 可以手动指定成员的数�
   Black
 }
 
-let c: Color = Color.Red;
-console.log(c); // 0
+let color: Color = Color.Red;
+console.log(color); // 0
 console.log(Color[0]); // 'Red'
 console.log(Color.Black); // 6
 
@@ -72,7 +72,7 @@ let unusable: void = undefined; // undefined or null，可以赋值 undefined �
 let u: undefined = undefined; // 也可以赋值 null
 // u = null;
 let u2: null = null; // 也可以赋值 undefined
-u2 = undefined;
+// u2 = undefined;
 
 // 默认情况下 null 和 undefined 是所有类型的子类型。 就是说你可以把 null 和 undefined 赋值给 number 类型的变量。
 // * tsc type.ts --strictNullChecks 使用严格模式，null 和 undefined 只能赋值给 void 和它们各自
@@ -107,10 +107,10 @@ declare function create(o: object | null): void;
 create({ prop: 0 }); // OK
 create(null); // OK
 
-create(42); // Error
-create("string"); // Error
-create(false); // Error
-create(undefined); // Error
+// create(42); // Error
+// create("string"); // Error
+// create(false); // Error
+// create(undefined); // Error
 
 // 类型断言
 // 你很清楚的知道该值是什么类型，断言该值就是这个类型
