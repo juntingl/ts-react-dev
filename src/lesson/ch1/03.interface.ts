@@ -12,8 +12,8 @@
  * 11、接口继承类
  * @Author: Junting.liu
  * @Date: 2019-04-30 18:10:53
- * @Last Modified by: Junting.liu
- * @Last Modified time: 2019-04-30 19:50:59
+ * @Last Modified by: Junting
+ * @Last Modified time: 2020-04-16 23:58:39
  */
 
 // 接口定义

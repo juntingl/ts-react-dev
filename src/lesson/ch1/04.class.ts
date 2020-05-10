@@ -14,8 +14,7 @@ class Greeter {
   }
 }
 
-
-class Animal {
+abstract class Animal {
   name: string
 
   constructor(name: string) {
@@ -25,15 +24,16 @@ class Animal {
   move(distance: number = 0) {
     console.log(`${this.name} moved ${distance}m`);
   }
+  abstract sleep(): void
 }
 
-class Snake extends Animal {
-  constructor(name: string) {
-    super(name);
-  }
+// class Snake extends Animal {
+//   constructor(name: string) {
+//     super(name);
+//   }
 
-  move(distance: number = 5) {
-    console.log('Slithering...');
-    super.move(distance);
-  }
-}
+//   move(distance: number = 5) {
+//     console.log('Slithering...');
+//     super.move(distance);
+//   }
+// }
